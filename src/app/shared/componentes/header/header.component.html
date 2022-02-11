@@ -1,0 +1,36 @@
+<mat-toolbar color="basic">
+  <mat-toolbar-row>
+    <nav>
+      <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+      <a mat-button routerLink="/productos" routerLinkActive="active"
+        >Productos</a
+      >
+      <a mat-button routerLink="/contacto" routerLinkActive="active"
+        >Contacto</a
+      >
+    </nav>
+    <span class="espacio"></span>
+
+    <a
+      routerLink="/orden"
+      mat-raised-button
+      matBadge=" total$ | async "
+      matBadgeColor="warn"
+    >
+
+    <ng-container
+    *ngIf="{
+      total: totales$ | async,
+      cantidad: cantidad$ | async
+    } as dataCart"
+    >
+    <ng-container *ngIf="dataCart.total">
+      <mat-icon>shopping_cart</mat-icon>
+      Items
+      ({{ dataCart.cantidad }})
+      {{dataCart.total | currency}}
+    </ng-container>
+      </ng-container>
+    </a>
+  </mat-toolbar-row>
+</mat-toolbar>

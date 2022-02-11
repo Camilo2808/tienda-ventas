@@ -1,4 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+// TEMA PROPIO
+$primary((
+ color: (
+   primary: $my-palette-primary,
+   accent: $my-palette-accent,
+   warn: $my-palette-warn
+ )
+));
+*/
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html{
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: linear-gradient(to right, rgb(45, 0, 0),rgb(15, 0, 0));
+  //background:  url('/assets/fondos/fondo5.jpeg');
+  background-size: auto;
+  min-height: 100%;
+
+  }
+
+.producto-grid{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-gap: 50px 20px;
+
+}
+
+@media(min-width: 576px){
+  .producto-grid{
+  grid-template-columns: repeat(3,1fr);
+
+  }
+
+  .container{
+    max-width: 1110px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+
+.container{
+  width: 80%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}

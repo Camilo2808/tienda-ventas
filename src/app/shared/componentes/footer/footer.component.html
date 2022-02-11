@@ -1,0 +1,63 @@
+<!--
+
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <nav>
+        <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+      </nav>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+-->
+<footer >
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="box">
+          <h3>Productos</h3>
+          <ul>
+            <li>
+              <a routerLink="/productos" [queryParams]="{ type: 'news' }"
+                >Nuevos Productos</a
+              >
+            </li>
+            <li>
+              <a routerLink="/productos" [queryParams]="{ type: 'offer' }"
+                >En oferta</a
+              >
+            </li>
+            <li>
+              <a routerLink="/productos" [queryParams]="{ type: 'latest' }"
+                >Últimos productos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="box">
+          <h3>Acerca de Listado de Frutas</h3>
+          <ul>
+            <li><a routerLink="/productos">Sobre nosotros</a></li>
+            <li><a routerLink="/home">Home</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="box">
+          <h3>Contacto</h3>
+          <mat-form-field>
+          <input matInput placeholder="Ingrese su Email" [formControl]="emailCampo" type="email">
+        </mat-form-field>
+        <button mat-raised-button color="accent" [disabled]="emailCampo.invalid"(click)="enviarEmail()">Enviar</button>
+        
+        <!-- <mat-form-field color="accent" class="full-width">
+            <p *ngIf="emailCampo.invalid">El campo no es valido</p>
+                <input [formControl]="emailInput" matInput placeholder="Su correo" type="email">
+              </mat-form-field>
+              <button (click)="registerMail()" [disabled]="emailInput.invalid" mat-raised-button color="accent">Suscribirse</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,51 @@
+//:host{
+// border: 1px solid black;
+// margin: 2px auto;
+// border-radius: 5px;
+//display: block;
+// max-width: 100%;
+//width: 100%;
+//}
+
+.imagen-estilos {
+  height: 300px;
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.estilo {
+  color: rgb(255, 102, 0);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+
+.dividir {
+  padding: 1px;
+}
+
+/*
+#principal li{
+  display: inline;
+  float: left;
+  width: 220px;
+  background-color: #5fa7f9;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  border-right: #5fa7f9 solid 1px;
+  border-bottom: #fff solid 1px;
+
+}
+*/

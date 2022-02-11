@@ -1,0 +1,184 @@
+<div class="box">
+  <form class="item form" #formularioOrden="ngForm">
+    <mat-form-field class="elemento" appearance="legacy">
+      <input
+        matInput
+        placeholder="Nombre"
+        required
+        name="nombre"
+        #name="ngModel"
+        [(ngModel)]="modelo.nombre"
+        type="text"
+      />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Nombre Requerido
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="elemento" appearance="legacy">
+      <input
+        matInput
+        placeholder="Apellido"
+        required
+        name="apellido"
+        #apellido="ngModel"
+        [(ngModel)]="modelo.apellido"
+        type="text"
+      />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Apellido Requerido
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="elemento" appearance="legacy">
+      <input
+        matInput
+        placeholder="Estado"
+        required
+        name="estado"
+        #name="ngModel"
+        [(ngModel)]="modelo.estado"
+        type="text"
+      />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Campo Requerido
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="elemento" appearance="legacy">
+      <input
+        matInput
+        placeholder="Ciudad"
+        required
+        name="ciudad"
+        #name="ngModel"
+        [(ngModel)]="modelo.ciudad"
+        type="text"
+      />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Campo Requerido
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="elemento" appearance="legacy">
+      <input
+        matInput
+        placeholder="Ingrese su Correo"
+        required
+        name="correo"
+        #correo="ngModel"
+        [(ngModel)]="modelo.correo"
+        type="text"
+      />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Correo Requerido
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
+
+<div class="espacio">
+  <button
+    [disabled]="!formularioOrden.form.valid"
+    mat-raised-button
+    type="submit"
+    (click)="onSubmit(formularioOrden)"
+    mat-mini-fab
+    matStepperNext
+    color="primary"
+    type="button"
+  >
+    Enviar
+  </button>
+</div>
+
+<!--
+
+  <div class="box">
+    <form class="item form" #formularioOrden="ngForm">
+      <mat-form-field class="elemento">
+        <input
+        matInput
+        placeholder="Nombre"
+        required
+        name="nombre"
+
+        #name="ngModel"
+        [(ngModel)]="modelo.nombre"
+        type="text"
+      />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Nombre Requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="elemento">
+      <input
+        matInput
+        placeholder="Apellido"
+        required
+        name="apellido"
+        #apellido="ngModel"
+        [(ngModel)]="modelo.apellido"
+        type="text"
+      />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Apellido Requerido
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="elemento">
+      <mat-label>Estado</mat-label>
+      <mat-select
+        required
+        name="state"
+        #state="ngModel"
+        [(ngModel)]="modelo.estados"
+      >
+        <mat-option value="state" *ngFor="let state of estados">
+          {{ state.estado }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="elemento">
+      <mat-label>Ciudad</mat-label>
+      <mat-select
+        required
+        name="ciudad"
+        #ciudad="ngModel"
+        [(ngModel)]="modelo.ciudades"
+      >
+        <mat-option value="ciudad" *ngFor="let ciudad of ciudades">
+          {{ ciudad.ciudad }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="elemento">
+      <mat-label>Tipo de Pedido</mat-label>
+      <mat-select
+        required
+        name="pedido"
+        #pedido="ngModel"
+        [(ngModel)]="modelo.pedidos"
+      >
+        <mat-option value="pedido" *ngFor="let pedido of pedidos">
+          {{ pedido.pedidos }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+
+
+  </form>
+</div>
+<div>
+  <button
+    [disabled]="!formularioOrden.form.valid"
+    mat-raised-button
+    type="submit"
+    (click)="onSubmit(formularioOrden)"
+  >
+    Guardar
+  </button>
+</div>
+-->

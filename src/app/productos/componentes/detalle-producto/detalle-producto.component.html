@@ -1,0 +1,35 @@
+<div *ngIf="producto">
+  <mat-card>
+
+    <mat-card-content class="producto-grid">
+      <img [src]="producto.image" alt="" />
+    </mat-card-content>
+
+    <mat-card-header>
+      <mat-card-title>
+        <p class="centro">Nombre:{{ producto.name }}</p>
+        <p class="centro">Precio:{{ producto.price | currency }}</p>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <p>{{ producto.description }}</p>
+      </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-actions>
+      <button mat-raised-button (click)="crearProducto()">
+        Crear Producto
+      </button>
+      <button mat-raised-button (click)="editarProducto()">
+        Editar Producto
+      </button>
+      <button mat-raised-button color="warn" (click)="borrarProducto()">
+        Eliminar Producto
+      </button>
+
+
+    </mat-card-actions>
+  </mat-card>
+</div>
+<!--
+  04249029298
+-->

@@ -1,0 +1,44 @@
+/*
+:host{
+
+  margin: 2px;
+  border: 1px solid brown;
+  border-radius: 6px;
+  display: block;
+
+}
+*/
+.imagen{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+
+  img{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+
+  }
+}
+mat-card{
+  //background: linear-gradient(to right, rgb(45, 0, 0),rgb(15, 0, 0));
+  border-radius: 10px;
+  background:  url('/assets/fondos/fondo5.jpeg');
+ // background-size: contain;
+
+}
+mat-card-title{
+ color: white;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ padding-bottom: 10px;
+}
+
+mat-card-subtitle{
+  font-size: 30px;
+  color: white;
+
+}

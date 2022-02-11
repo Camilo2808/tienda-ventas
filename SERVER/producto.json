@@ -1,0 +1,282 @@
+{
+  "productos": [
+    {
+      "id": "01",
+      "name": "Mocachino",
+      "image": "assets/img/cafe moka.jpg",
+      "description": "Café espresso hecho, con ",
+      "price": "7.25"
+    },
+    {
+      "id": "02",
+      "name": "Capuccino",
+      "image": "assets/img/cafe capucciono 01.jfif",
+      "description": "Pendiente",
+      "price": "8.75"
+    },
+    {
+      "id": "03",
+      "name": "Expreso",
+      "image": "assets/img/cafe expreso.jpg",
+      "description": "Pendiente",
+      "price": "3.25"
+    },
+    {
+      "id": "04",
+      "name": "Frappe",
+      "image": "assets/img/cafe frappe.jpg",
+      "description": "Pendiente",
+      "price": "6.50"
+    },
+    {
+      "id": "05",
+      "name": "Cafe mixto",
+      "image": "assets/img/cafe01.jpg",
+      "description": "Pendiente",
+      "price": "9.95"
+    },
+    {
+      "id": "06",
+      "name": "Cafe mediano",
+      "image": "assets/img/cafe02.jpg",
+      "description": "Pendiente",
+      "price": "7.25"
+    },
+    {
+      "id": "07",
+      "name": "Marron ",
+      "image": "assets/img/cafe03.jfif",
+      "description": "Pendiente",
+      "price": "3.75"
+    }
+  ],
+  "pagos": [
+    {
+      "id": "1",
+      "pago": "efectivo",
+      "moneda": "divisas",
+      "tipo": "Dolares"
+    },
+    {
+      "id": "2",
+      "pago": "tranferencia",
+      "moneda": "divisas",
+      "tipo": "euros"
+    },
+    {
+      "id": "3",
+      "pago": "cambio",
+      "moneda": "divisas",
+      "tipo": "pesos Colombianos"
+    },
+    {
+      "id": "4",
+      "pago": "crypto",
+      "moneda": "divisas",
+      "tipo": "pesos Argentinos"
+    },
+    {
+      "id": "5",
+      "pago": "reserve",
+      "moneda": "divisas",
+      "tipo": "euros"
+    },
+    {
+      "id": "6",
+      "pago": "Paypal",
+      "moneda": "divisas",
+      "tipo": "Sucre"
+    },
+    {
+      "id": "7",
+      "pago": "tarjeta",
+      "moneda": "divisas",
+      "tipo": "Real"
+    },
+    {
+      "id": "8",
+      "pago": "tarjeta",
+      "moneda": "divisas",
+      "tipo": "oro"
+    },
+    {
+      "id": "9",
+      "pago": "cheque",
+      "moneda": "divisas",
+      "tipo": "cupon"
+    }
+  ],
+  "bancos": [
+    {
+      "banco": "Banesco",
+      "estado": "Bolivar",
+      "municipio": "Caroni",
+      "zona": "Puerto Ordaz"
+    },
+    {
+      "banco": "Venezuela",
+      "estado": "Caracas",
+      "municipio": "Libertador",
+      "zona": "Bello Monte"
+    },
+    {
+      "banco": "Bnc",
+      "estado": "Anzoategui",
+      "municipio": "Simon Bolivar",
+      "zona": "Los Rosales"
+    },
+    {
+      "banco": "Mercantil",
+      "estado": "Cumana",
+      "municipio": "Mochima",
+      "zona": "San Felix"
+    },
+    {
+      "banco": "Bod",
+      "estado": "Valencia",
+      "municipio": "Heres",
+      "zona": "Cafetal"
+    },
+    {
+      "banco": "Bancrecer",
+      "estado": "Barinas",
+      "municipio": "Quinta Crespo",
+      "zona": "Paseo"
+    },
+    {
+      "banco": "Provincial",
+      "estado": "Maracaibo",
+      "municipio": "Metropolitano",
+      "zona": "Castillito"
+    },
+    {
+      "banco": "tesoro",
+      "estado": "Falcon",
+      "municipio": "Vigia",
+      "zona": "Paragua"
+    },
+    {
+      "banco": "banco Occidental",
+      "estado": "La Guaira",
+      "municipio": "Centro",
+      "zona": "Tigre"
+    }
+  ],
+  "electronico": [
+    {
+      "entidad": "Binance",
+      "tipo": "busd"
+    },
+    {
+      "entidad": "zelle",
+      "tipo": "usd"
+    },
+    {
+      "entidad": "paypal",
+      "tipo": "ustd"
+    }
+  ],
+  "state": [
+    {
+      "estado": "Anzoategui"
+    },
+    {
+      "estado": "Bolivar"
+    },
+    {
+      "estado": "Caracas"
+    },
+    {
+      "estado": "Valencia"
+    },
+    {
+      "estado": "Falcón"
+    },
+    {
+      "estado": "Aragua"
+    },
+    {
+      "estado": "Maracaibo"
+    }
+  ],
+  "ciudad": [
+    {
+      "ciudad": "Ciudad Guayana"
+    },
+    {
+      "ciudad": "Parque Central"
+    },
+    {
+      "ciudad": "Lecherias"
+    },
+    {
+      "ciudad": "Carabobo"
+    },
+    {
+      "ciudad": "Puerto Ordaz"
+    },
+    {
+      "ciudad": "San Jose"
+    },
+    {
+      "ciudad": "Maracaibo"
+    }
+  ],
+  "orden": [
+    {
+      "nombre": "nombre",
+      "apellido": "apellido",
+      "estado": "estado",
+      "ciudad": "ciudad",
+      "pedidos": "pedidos",
+      "id": "01"
+    },
+    {
+      "nombre": "Fernando",
+      "apellido": "brito",
+      "estado": "bolivar",
+      "ciudad": "guayana",
+      "correo": "camilo@gmail.com",
+      "id": "mDrmneJ"
+    },
+    {
+      "nombre": "Fernando",
+      "apellido": "brito",
+      "estado": "bolivar",
+      "ciudad": "guayana",
+      "correo": "camilobrito2808@gmail.com",
+      "id": "KS3HriL"
+    },
+    {
+      "nombre": "Fernando",
+      "apellido": "brito",
+      "estado": "bolivar",
+      "ciudad": "guayana",
+      "correo": "camilo@gmail.com",
+      "id": "NjVgTs-"
+    },
+    {
+      "nombre": "Camilo fernando",
+      "apellido": "brito",
+      "estado": "bolivar",
+      "ciudad": "guayana",
+      "correo": "camilobrito2808@gmail.com",
+      "id": "OL-c3wD"
+    }
+  ],
+  "detalle": [
+    {
+      "id": "01",
+      "name": "frappe",
+      "cantidad": "2"
+    }
+  ],
+  "pedidos": [
+    {
+      "pedidos": "tienda"
+    },
+    {
+      "pedidos": "delivery"
+    }
+  ]
+}

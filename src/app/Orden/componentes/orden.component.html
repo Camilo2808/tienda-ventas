@@ -1,0 +1,44 @@
+<mat-vertical-stepper class="producto-grid">
+  <mat-step>
+    <ng-template matStepLabel>Sus Productos</ng-template>
+    <h1>Sus Productos</h1>
+    <div *ngIf="productos$ | async as productos">
+      <p *ngIf="productos.length === 0">No Hay Productos</p>
+
+      <div *ngFor="let producto of productos" class="producto-grid">
+        <div>
+          <img class="image" [src]="producto.image" alt="imagen orden" />
+        </div>
+
+        <div>
+          <p class="centrar">
+            {{ producto.name }}
+          </p>
+          <p class="centrar">
+            {{ producto.price | currency }}
+          </p>
+        </div>
+
+     
+      </div>
+    </div>
+
+    <div class="espacio">
+      <button mat-mini-fab matStepperNext color="primary" type="button">
+        Next
+      </button>
+    </div>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Datos de Compra</ng-template>
+    <h1>Datos de Compra</h1>
+    <app-formulario-orden></app-formulario-orden>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Total Pedido</ng-template>
+    <h1>Total Pedido</h1>
+    <app-detalle-compra></app-detalle-compra>
+  </mat-step>
+</mat-vertical-stepper>
